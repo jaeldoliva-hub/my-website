@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   /* Background image with fallback color */
-  background-image: url("images/bg2.jpg");
+  background-image: url("assets/bg2.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed; /* optional: makes background stay when scrolling */
@@ -169,6 +169,7 @@ a {
 
 /* QR area styling */
 #qrArea img { width: 200px; height: 200px; }
+
 
 
 
