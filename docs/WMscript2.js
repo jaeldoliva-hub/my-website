@@ -18,8 +18,8 @@ function getFormValues() {
   return {
     serviceDate: document.getElementById('serviceDate')?.value || '',
     dirige: document.getElementById('dirige')?.value || '',
-    ofrendas: document.getElementById('ofrendas')?.value || '',
     alabanzas: document.getElementById('alabanzas')?.value || '',
+    ofrendas: document.getElementById('ofrendas')?.value || '',
     mensaje: document.getElementById('mensaje')?.value || '',
     puerta: document.getElementById('puerta')?.value || '',
     parqueo: document.getElementById('parqueo')?.value || '',
@@ -375,3 +375,4 @@ function showQr() {
 }
 
 window.showQr = showQr;
+
