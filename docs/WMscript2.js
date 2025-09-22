@@ -88,11 +88,11 @@ function buildFinalMessage(overrideFinalSpecial) {
     `*Parqueo:* ${vals.parqueo}`
   ].join('\n');
 
-let finalMessage = '';
-if (serviceDateTitle) finalMessage += `*Programa ${serviceDateTitle}*` + '\\n\\n';
-if (firstSpecial) finalMessage += firstSpecial + '\\n\\n';
-finalMessage += formLines;
-if (finalSpecial) finalMessage += '\\n\\n' + finalSpecial;
+  let finalMessage = '';
+  if (serviceDateTitle) finalMessage += `*Programa ${serviceDateTitle}*` + '\\n\\n';
+  if (firstSpecial) finalMessage += firstSpecial + '\\n\\n';
+  finalMessage += formLines;
+  if (finalSpecial) finalMessage += '\\n\\n' + finalSpecial;
 }
 
 function buildWhatsAppUrl(message) {
@@ -374,6 +374,7 @@ function showQr() {
 }
 
 window.showQr = showQr;
+
 
 
 
