@@ -94,7 +94,7 @@ function buildFinalMessage(overrideFinalSpecial) {
   finalMessage += formLines;
   if (finalSpecial) finalMessage += '\\n\\n' + finalSpecial;
   
-  return finalmessage;
+  return finalMessage;
 }
 
 function buildWhatsAppUrl(message) {
@@ -376,6 +376,7 @@ function showQr() {
 }
 
 window.showQr = showQr;
+
 
 
 
