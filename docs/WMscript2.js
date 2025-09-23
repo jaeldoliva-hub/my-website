@@ -89,10 +89,10 @@ function buildFinalMessage(overrideFinalSpecial) {
   ].join('\n');
 
   let finalMessage = '';
-  if (serviceDateTitle) finalMessage += `*Programa ${serviceDateTitle}*` + '\\n\\n';
-  if (firstSpecial) finalMessage += firstSpecial + '\\n\\n';
+  if (serviceDateTitle) finalMessage += `*Programa ${serviceDateTitle}*` + '\n\n';
+  if (firstSpecial) finalMessage += firstSpecial + '\n\n';
   finalMessage += formLines;
-  if (finalSpecial) finalMessage += '\\n\\n' + finalSpecial;
+  if (finalSpecial) finalMessage += '\n\n' + finalSpecial;
   
   return finalMessage;
 }
@@ -376,6 +376,7 @@ function showQr() {
 }
 
 window.showQr = showQr;
+
 
 
 
