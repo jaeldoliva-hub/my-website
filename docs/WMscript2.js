@@ -98,7 +98,8 @@ function buildFinalMessage(overrideFinalSpecial) {
 }
 
 function buildWhatsAppUrl(message) {
-  const encoded = utf8PercentEncode(message);
+  // Encode UTF-8 + preserve newlines
+  const encoded = encodeURIComponent(message).replace(/%20/g, '+');
   return 'https://api.whatsapp.com/send?text=' + encoded;
 }
 
@@ -376,6 +377,7 @@ function showQr() {
 }
 
 window.showQr = showQr;
+
 
 
 
