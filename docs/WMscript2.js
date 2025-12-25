@@ -96,7 +96,7 @@ const formLines = lines.join('\n');
 
   let finalMessage = '';
   if (firstSpecial) finalMessage += firstSpecial + '\n\n';
-  if (serviceDateTitle) finalMessage += `*Programa ${serviceDateTitle}*` + '\n\n';
+  if (serviceDateTitle) finalMessage += `*${serviceDateTitle}*` + '\n\n';
   finalMessage += formLines;
   if (finalSpecial) finalMessage += '\n\n' + finalSpecial;
   
@@ -383,6 +383,7 @@ function showQr() {
 }
 
 window.showQr = showQr;
+
 
 
 
