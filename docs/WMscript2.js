@@ -23,6 +23,7 @@ function getFormValues() {
     mensaje: document.getElementById('mensaje')?.value || '',
     puerta: document.getElementById('puerta')?.value || '',
     parqueo: document.getElementById('parqueo')?.value || '',
+    bocadillos: document.getElementById('bocadillos')?.value || '',
     recordatorio: document.getElementById('recordatorioMessage')?.value || '',
     whatsappMessage: document.getElementById('whatsappMessage')?.value || ''
   };
@@ -79,14 +80,19 @@ function buildFinalMessage(overrideFinalSpecial) {
   const serviceDateFormatted = formatDateToSpanish(vals.serviceDate);
   const serviceDateTitle = formatDateToSpanishTitle(vals.serviceDate);
 
-  const formLines = [
-    `*Dirige:* ${vals.dirige}`,
-    `*Ofrendas:* ${vals.ofrendas}`,
-    `*Alabanzas:* ${vals.alabanzas}`,
-    `*Mensaje:* ${vals.mensaje}`,
-    `*Puerta:* ${vals.puerta}`,
-    `*Parqueo:* ${vals.parqueo}`
-  ].join('\n');
+const lines = [];
+
+if (vals.dirige)   lines.push(`*Dirige:* ${vals.dirige}`);
+if (vals.alabanzas) lines.push(`*Alabanzas:* ${vals.alabanzas}`);
+if (vals.ofrendas) lines.push(`*Ofrendas:* ${vals.ofrendas}`);
+if (vals.mensaje)  lines.push(`*Mensaje:* ${vals.mensaje}`);
+
+// ONLY show these if filled
+if (vals.puerta)   lines.push(`*Puerta:* ${vals.puerta}`);
+if (vals.parqueo)  lines.push(`*Parqueo:* ${vals.parqueo}`);
+if (vals.bocadillos) lines.push(`*Bocadillos:* ${vals.bocadillos}`);
+
+const formLines = lines.join('\n');
 
   let finalMessage = '';
   if (firstSpecial) finalMessage += firstSpecial + '\n\n';
@@ -377,6 +383,7 @@ function showQr() {
 }
 
 window.showQr = showQr;
+
 
 
 
