@@ -1,8 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   /* Background image with fallback color */
-  background-color: #f2f2f2;
-  background-image: url("https://jaeldoliva-hub.github.io/my-website/bg2.jpg");
+  background-color: #81cbf0;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed; /* optional: makes background stay when scrolling */
@@ -170,6 +169,7 @@ a {
 
 /* QR area styling */
 #qrArea img { width: 200px; height: 200px; }
+
 
 
 
