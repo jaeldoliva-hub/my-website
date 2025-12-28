@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   /* Background image with fallback color */
-  background:linear-gradient(#0000db, #000065);
+  background:linear-gradient(135deg, #44c6c6, #4486c6);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll; /* optional: makes background stay when scrolling */
@@ -171,6 +171,7 @@ a {
 
 /* QR area styling */
 #qrArea img { width: 200px; height: 200px; }
+
 
 
 
