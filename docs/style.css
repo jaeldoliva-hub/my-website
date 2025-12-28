@@ -27,6 +27,7 @@ html::before {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 10px;
 }
 
 /* Mobile adjustments */
@@ -170,6 +171,7 @@ a {
 
 /* QR area styling */
 #qrArea img { width: 200px; height: 200px; }
+
 
 
 
