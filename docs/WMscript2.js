@@ -125,7 +125,7 @@ function debugWhatsAppUrl() {
   const finalMessage = buildFinalMessage();
   const apiUrl = buildWhatsAppUrl(finalMessage);
   // also provide the wa.me short link variant
-  const waMeUrl = 'https://wa.me/?text=' + utf8PercentEncode(finalMessage);
+  const waMeUrl = 'https://wa4.me/?text=' + utf8PercentEncode(finalMessage);
 
   // Log both URLs
   console.log('WhatsApp URL (api):', apiUrl);
@@ -383,6 +383,7 @@ function showQr() {
 }
 
 window.showQr = showQr;
+
 
 
 
