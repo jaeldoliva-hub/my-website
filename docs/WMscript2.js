@@ -189,7 +189,7 @@ function debugWhatsAppUrl() {
 }
 
 // expose helpers for debugging from browser console / HTML buttons
-window.buildFinalMessage = buildFinalMessage;
+window.buildfinalMessage = buildFinalMessage;
 window.buildWhatsAppUrl = buildWhatsAppUrl;
 window.debugWhatsAppUrl = debugWhatsAppUrl;
 window.sendToWhatsApp = sendToWhatsApp;
@@ -383,6 +383,7 @@ function showQr() {
 }
 
 window.showQr = showQr;
+
 
 
 
