@@ -14,7 +14,7 @@ function utf8PercentEncode(str) {
 }
 
 // Read form values in one place
-function getFormValues() {
+function getFormValuesa() {
   return {
     serviceDate: document.getElementById('serviceDate')?.value || '',
     dirige: document.getElementById('dirige')?.value || '',
@@ -383,6 +383,7 @@ function showQr() {
 }
 
 window.showQr = showQr;
+
 
 
 
